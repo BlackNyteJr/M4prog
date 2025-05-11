@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb
--- Generation Time: May 09, 2025 at 08:30 AM
+-- Generation Time: May 11, 2025 at 06:54 PM
 -- Server version: 11.7.2-MariaDB-ubu2404
 -- PHP Version: 8.2.27
 
@@ -24,18 +24,14 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `huisdieren`
+-- Table structure for table `01 kaartspel`
 --
 
-CREATE TABLE `kaarten` (
-    `kaart_id` INT PRIMARY KEY AUTO_INCREMENT,
-    `naam` VARCHAR(100) NOT NULL,
-    `kost` INT NOT NULL,
-    `aanval` INT NOT NULL,
-    `verdediging` INT NOT NULL,
-    `flavor_text` VARCHAR(255),
-    `beschrijving` TEXT,
-    `type_kaart` VARCHAR(50)
+CREATE TABLE `01 kaartspel` (
+  `Blast` int(80) NOT NULL COMMENT 'Fire a huge blast',
+  `Beam` int(110) NOT NULL COMMENT 'Release a mega beam',
+  `Explosion` int(150) NOT NULL COMMENT 'Fire a bomb spell',
+  `Nuke` int(210) NOT NULL COMMENT 'Unleash Hiroshima'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
@@ -43,20 +39,20 @@ CREATE TABLE `kaarten` (
 --
 
 --
--- Indexes for table `huisdieren`
+-- Indexes for table `01 kaartspel`
 --
-ALTER TABLE `huisdieren`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `01 kaartspel`
+  ADD PRIMARY KEY (`Blast`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `huisdieren`
+-- AUTO_INCREMENT for table `01 kaartspel`
 --
-ALTER TABLE `huisdieren`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `01 kaartspel`
+  MODIFY `Blast` int(80) NOT NULL AUTO_INCREMENT COMMENT 'Fire a huge blast';
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
