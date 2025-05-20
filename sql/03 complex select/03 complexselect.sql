@@ -12,6 +12,7 @@ SELECT * FROM `Discord` order by Chats;
 SELECT * FROM `Discord` LIMIT 2;
 SELECT sum(Notifications) FROM `Discord`;
 SELECT sum(Notifications) as Total, sum(Servers) as  Total FROM `Discord` order by Chats LIMIT 3;
+
 SELECT 
     `Notifications`,
     `Chats`,
