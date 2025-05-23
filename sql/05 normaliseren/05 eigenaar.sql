@@ -44,7 +44,7 @@ INSERT INTO `huisdiereigenaar`
 (`id`, `voornaam`, `achternaam`, `leeftijd`)
 
 VALUES 
-(1, 'Damyan','-', '7'),
-(2, 'Chris','-', '7'),
-(3, 'Joep','-', '7'),
-(4, 'Marije','-', '7');
+(1, 'Damyan','Maxwell', '17'),
+(2, 'Chris','Hemsworth', '44'),
+(3, 'Joep','Jep', '47'),
+(4, 'Marije','Soronto', '21');
