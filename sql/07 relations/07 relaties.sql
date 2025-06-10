@@ -44,3 +44,18 @@ JOIN
     kat k1 ON kt.mama_id = k1.id
 JOIN 
     kat k2 ON kt.papa_id = k2.id;
+
+ALTER TABLE kitten
+DROP FOREIGN KEY FK_mama;
+ALTER TABLE kitten
+DROP INDEX FK_mama;
+
+ALTER TABLE kitten
+DROP FOREIGN KEY FK_papa;
+ALTER TABLE kitten
+DROP INDEX FK_papa;
+
+SELECT * FROM kitten;
+SELECT * FROM kat;
+
+DELETE FROM kat WHERE id=1;
